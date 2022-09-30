@@ -14,26 +14,26 @@ const Navigation: React.FC <INavigationProps> = props =>{
   }
 
   return(
-    <Navbar color='light' light sticky='top' expand='md'>
+    <nav className='navbar navbar-expand-lg fixed-top navbar-dark bg-info'>
       <Container>
-        <NavbarBrand tag={Link} to='/'>📚</NavbarBrand>
-        <Nav className='mr-auto' navbar/>
+        <NavbarBrand className='navbar-brandnavbar-brand' tag={Link} to='/'><h3>HOME</h3></NavbarBrand>
+        <Nav className='mr-2' navbar/>
         {user._id === ''?
             <div>
-              <NavbarText tag={Link} to="/login" >Login</NavbarText>
+              <NavbarText tag={Link} to="/login"  className='btn btn-secondary my-2 my-sm-0'>Login</NavbarText>
               <NavbarText className='mr-2 ml-2'>|</NavbarText>
-              <NavbarText tag={Link} to="/register" >Sign Up</NavbarText>
+              <NavbarText tag={Link} to="/register" className='btn btn-secondary my-2 my-sm-0'>Sign Up</NavbarText>
             </div>
           :
             <div>
-              <Button outline tag={Link} to="/edit">Post a blog</Button>
+              <Button outline tag={Link} to="/edit" className='btn btn-secondary my-2 my-sm-0'>Post a blog</Button>
               <NavbarText className='mr-2 ml-2'>|</NavbarText>
-              <Button outline size='sm' onClick={() => Logout()}> Logout</Button>
+              <Button onClick={() => Logout()} className='btn btn-secondary my-2 my-sm-0'> Logout</Button>
             </div>
 
         }
       </Container>
-    </Navbar>
+    </nav>
   );
 }
 

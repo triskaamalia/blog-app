@@ -118,6 +118,7 @@ const BlogPage: React.FunctionComponent<IPageProps & RouteComponentProps<any>> =
           </ModalFooter>
         </Modal>
         <Header
+            image={blog.picture || undefined}
             headline={blog.headline}
             title={blog.title}
                 > 

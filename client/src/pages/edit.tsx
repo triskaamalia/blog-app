@@ -184,7 +184,7 @@ const EditPage: React.FunctionComponent<IPageProps & RouteComponentProps<any>> =
 
   
   return(
-    <Container fluid className="p-0">
+    <Container fluid className="p-0 text-black">
       <Navigation />
       <Header 
         headline=""
@@ -242,7 +242,7 @@ const EditPage: React.FunctionComponent<IPageProps & RouteComponentProps<any>> =
                 setContent(draftToHtml(convertToRaw(newState.getCurrentContent())));
               }}
               toolbar={{
-              options: ['inline', 'blockType', 'fontSize', 'list', 'textAlign', 'history', 'embedded', 'emoji', 'image'],
+              options: ['inline', 'blockType', 'fontSize', 'list', 'textAlign', 'history', 'link', 'emoji', 'image'],
               inline: { inDropdown: true },
               list: { inDropdown: true },
               textAlign: { inDropdown: true },

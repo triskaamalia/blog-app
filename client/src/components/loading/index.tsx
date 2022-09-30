@@ -59,7 +59,7 @@ export const LoadingComponent: React.FunctionComponent<ILoadingComponentProps> =
 }
 LoadingComponent.defaultProps = {
   card: true,
-  dotType: 'dot-bricks'
+  dotType: 'dot-rolling'
 }
 
 export default LoadingComponent;

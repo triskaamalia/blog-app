@@ -28,9 +28,9 @@ const Header: React.FunctionComponent<IHeaderProps> = props => {
     return (
         <header style={headerStyle}>
             <Container>
-                <Row className="align-items-center text-center">
+                <Row className="align-items-center text-center p-3">
                     <Col>
-                        <h1 className="display-4 text-white mt-5 mb-2">{title}</h1>
+                        <h1 className="display-4 text-white mt-5 mb-2 p-3">{title}</h1>
                         <h3 className="mb-5 text-white">{headline}</h3>
                         {children}
                     </Col>
